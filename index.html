@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="right">
+        <div><button onclick="myFunction()">Add Task</button></div>
+      </div>
+      <div class="left">
+        <div><label>Task Progress</label></div>
+        <div><label>Priority Status</label></div>
+      </div>
+    </div>
+    <div class="container">
+      <form id="add-Task">
+        <div>
+          <input type="text" placeholder="Data of Task" id="data" required />
+        </div>
+        <div>
+          <input type="date" placeholder="Date of Task" id="date" required />
+        </div>
+        <div>
+          <input type="time" placeholder="time of Task" id="time" required />
+        </div>
+        <div>
+          <button onclick="addNewTask()">Add</button>
+        </div>
+      </form>
+      <div class="table-content">
+        <table id="tasks">
+          <thead>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th></th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
